@@ -1,0 +1,106 @@
+/* a css comment  
+ COLOR PALETTE -- goto     www.color.abobe.com palette inspiration
+ #45472E - Darkest Green
+ #A1AA5D - mid Green
+ #EAD674 - Ocher yellow
+ #F7F5C1 - lighter Ocher
+ #D0CD98 - light blue green
+
+ */
+*{
+	margin: 0;
+}
+body {
+	background-color: #483d37;/*each element can have its own background color*/
+	color:#483d37; /*each element can change the font color inside it */
+	margin: 0 auto;
+	width: 900px;
+	font-family: Helvetica;
+	font-size: 16px;
+}
+
+header{
+	padding: 1.5em;	
+}
+
+header h1{
+	font-size: 3.2em;
+	padding: .5em .5em .5em .2em;
+}
+header{
+	background-color: #A1AA5D;
+	color: #45472E;	
+}
+
+/**********************************************   link styles *****************/
+a{/*set default base styles for links */
+	color: #CDE0E7;
+	text-decoration: none;
+	/*padding: 15px;*/
+	/*background: pink;*/
+}
+/*  only target the nav for hover styles  */
+nav a:hover{
+	background-color: #e2f7ff;
+	padding: 1em 1.2em 1.2em 1.2em;
+	color:#45472E;
+
+}
+nav a{
+	padding: 1em 1.2em 1.2em 1.2em;
+}
+
+nav{
+	background-color: #2F4D69;
+}
+
+nav ul{
+	list-style: none;
+	padding: 1em;
+	text-align: center;
+
+}
+nav li{
+	display: inline-block; 
+}
+
+/* set multiple elements at the same time...... **/
+h2, h3, h4, p, table, img{
+	padding: 1em 1.2em 0 2em;
+	margin:0;
+}
+
+#mainContent h3, {
+	padding: 1em 2em 1em 2em;
+}
+#mainContent p{
+	padding: 1em 2em .3em 2em;
+	line-height: 1em;
+}
+
+#mainContent li{
+	padding: .3em;	
+}
+#mainContent li:nth-child(2n){
+	/*background: rgba(139, 146, 139, 0.2); */
+}
+
+#mainContent{
+	background-color: #e2f7ff;
+	font-size: 1em;
+}
+
+footer{
+	background-color: #2F4D69;
+	color:#CDE0E7;
+
+}
+
+/*********************************************   FORMS STYLING **********/
+
+
+.error{
+    color: red;   
+}
+
+

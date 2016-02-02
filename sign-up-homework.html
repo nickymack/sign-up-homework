@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    //$( "#datepicker" ).datepicker();
+  });
+  </script>
+ <!-- jQuery CDN link....  
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 -->
+		<meta charset="UTF-8">	
+		<title>HTML5: Week One</title>  
+		<!-- link to an external style sheet (best practice with style sheet)-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+			<h1>Lizard Fan Club U.S.A.</h1> <!-- only h1 per page (for SEO purposes) --> 	
+		</header>
+		<nav class="nav1"> 
+			<ul>
+				<!-- these links are relative paths -->
+				<li> <a href="#">home</a></li>
+				<li> <a href="#">gallery</a></li>
+				<li> <a href="sign-up.html">Sign Up Here</a></li>
+				<li> <a href="#">Mobile Site</a></li>
+				<li> <a href="http://www.google.com">Google</a></li>
+			</ul>
+		</nav>
+		<div id="mainContent">
+            <h3>If you want to connect with the lizard community, please fill out the following form.</h3>
+          <form id="sign-up-form" method="post" action="#">
+            <fieldset>
+              <h2>Create a Lizard Fan Club U.S.A. Account</h2>
+              <ul>
+                <li>
+                  <label for="f-name-label">First Name:</label>
+                  <input id="f-name-label"type="text" name="first-name" placeholder="your first name here" autofocus required/> 
+                </li>
+                <li>
+                  <label for="l-name-label">Last Name:</label>
+                  <input id="l-name-label"type="text" name="last-name" placeholder="your last name here" required/> 
+                </li>
+                <li>
+                  <label for="email">Enter Your E-Mail Address!</label>
+                  <input type="email" name="email" required/>
+                </li>
+                <li>
+                  <label>Favorite Decade For Lizard Progress</label>
+                  <select name="decade">
+                    <option value="1910">1910</option>
+                    <option value="1920">1920</option>
+                    <option value="1930">1930</option>
+                    <option value="1940">1940</option>
+                    <option value="1950">1950</option>
+                    <option value="1960">1960</option>
+                    <option value="1970">1970</option>
+                    <option value="1980">1980</option>
+                    <option value="1990">1990</option>
+                    <option value="2000">2000 and beyond</option>
+                  </select>
+                </li>
+                <li>
+                  <label>How Many Lizards Do You Currently Own?</label>
+                  <input type="number" value="1" placeholder="1" min="0" max="101"/>
+                </li>
+                <li>
+                  <label>Favorite Type of Lizard</label>
+                  <select name="number-of-lizzards">
+                    <option value="anole">Anole</option>
+                    <option value="gecko">Gecko</option>
+                    <option value="iguana">Iguana</option>
+                    <option value="komodo-dragon">Komodo Dragon</option>
+                    <option value="chameleon">Chameleon</option>
+                    <option value="tegu">Tegu</option>
+                  </select>
+                <li>
+                  <label for="checkbox-subscribe">Sign Up For:</label>
+                    <ul>
+                      <li>
+                        <input type="checkbox" name="checkbox" id="checkbox-subscribe" alt="newsletter">
+                        <label for="checkbox-subscribe">Weekly Newsletter</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="checkbox" id="checkbox-subscribe" alt="trivia">
+                        <label for="checkbox-subscribe">Daily Trivia</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="checkbox" id="checkbox-subscribe">
+                        <label for="checkbox-subscribe">Coupons for Lizard Food</label>
+                      </li>
+                    </ul>
+                </li>
+                <li>
+                  <label>Enter Your Zip Code</label>
+                  <input type="text" placeholder="90210" pattern="^[0-9]{5}" required/>
+                </li>
+                </li>
+              </ul>
+              <input type="image" src="images/lizard.jpg" alt="Submit" width="120" height="90">
+              <h4>Click The Lizard to Submit!</h4>
+            </fieldset>
+          </form>
+			<!-- A Simple Form    -->
+		
+            
+            	
+
+        </div><!-- closing maincContent div tag -->
+		
+		
+        <!--  This is the footer section, only footer stuff -->
+		<footer>
+			<p>&copy; copyright 2015</p>
+			
+		</footer>
+
+	</body>
+</html>

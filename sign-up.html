@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    //$( "#datepicker" ).datepicker();
+  });
+  </script>
+ <!-- jQuery CDN link....  
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 -->
+		<meta charset="UTF-8">	
+		<title>HTML5: Week One</title>  
+		<!-- link to an external style sheet (best practice with style sheet)-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+			<h1>HTML5: Week One</h1> <!-- only h1 per page (for SEO purposes) --> 	
+		</header>
+		<nav class="nav1"> 
+			<ul>
+				<!-- these links are relative paths -->
+				<li> <a href="#">home</a></li>
+				<li> <a href="#">gallery</a></li>
+				<li> <a href="sign-up.html">Sign Up Here</a></li>
+				<li> <a href="#">Mobile Site</a></li>
+				<li> <a href="http://www.google.com">Google</a></li>
+			</ul>
+		</nav>
+		<div id="mainContent">
+            <h3>If you want to connect with the community and post content, please create an account.</h3>
+          <h3>the following is a form to sign up</h3>
+          <!--when you choose post more data can go in/
+          # action makes it not go out somewhere, it's a fake link./
+          id is used for CSS and for Javascript-->
+          <form id="sign-up-form" method="post" action="#">
+            <fieldset>
+              <h2>Create an Account</h2>
+              <ul>
+                <li>
+                  <label id="f-name-label">First Name:</label>
+                  <input id="f-name-label"type="text" name="first-name" placeholder="your first name here" required/> 
+                  <!-- you write required without having anything else after it -->
+                </li>
+                <li>
+                  <label id="l-name-label">Last Name:</label>
+                  <input id="l-name-label"type="text" name="last-name" placeholder="your last name here" required/> 
+                </li>
+                <li>
+                  <label>Date of Birth</label>
+                  <select name="year">
+                    <option value="1970">1970</option>
+                    <option value="1971">1971</option>
+                    <option value="1972">1972</option>
+                    <option value="1973">1973</option>
+                    <option value="1974">1974</option>
+                    <option value="1975">1975</option>
+                  </select>
+                </li>
+                  <label>Day of Birth</label>
+                  <select name="day">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                <li>
+                  <label>Please enter a valid e-mail</label>
+                  <input type="email" name="email"/>
+                </li>
+                <li>
+                  <label>Please enter a donation amount $</label>
+                  <input type="number" value="100" placeholder="100" min="1" max="101"/>
+                </li>
+                <li>
+                  <label>Enter Zip Code</label>
+                  <input type="number" placeholder="90210" pattern="^[0-9]{5}" required/>
+                </li>
+              </ul>
+              <input type="submit" value="Sign Up!" name="submit"/>
+            </fieldset>
+          </form>
+          
+			<!-- A Simple Form    -->
+		
+            
+            	
+
+        </div><!-- closing maincContent div tag -->
+		
+		
+        <!--  This is the footer section, only footer stuff -->
+		<footer>
+			<p>&copy; copyright 2015</p>
+			
+		</footer>
+
+	</body>
+</html>
